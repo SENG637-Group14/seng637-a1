@@ -37,7 +37,51 @@ This report shares our group's experience testing the ATM simulation system for 
 
 # High-level description of the exploratory testing plan
 
-Text…
+# Test Strategy
+Based on the requirements extracted from Appendix B, we outlined the scope, approach, and all testing activities related to the ATM Simulation application. The plan identifies the features to be tested, test types to be performed, and who will be performing each test.
+## Scope of Testing
+### Features to be Tested
+The following features of the ATM software, as outlined in the requirements, will be tested:
+
+1 Card Insertion & PIN Validation: Testing the functionality for inserting the ATM card and validating the PIN for each transaction.
+
+2 Cash Withdrawal: Ensuring the withdrawal of cash in multiples of $20 from any account linked to the card, with bank approval.
+
+3 Deposit Handling: Testing the deposit functionality for cash and checks in envelopes, and communication with the bank for approval.
+
+4 Money Transfers: Verifying the transfer of funds between accounts linked to the card.
+
+5 Balance Inquiry: Testing the balance inquiry functionality for various accounts linked to the ATM card.
+
+6 Cancel Transaction: Ensuring the cancel button works to abort transactions at any stage.
+
+7 Receipt Generation: Verifying that receipts are generated for each transaction, with correct details including time, type, and balances.
+
+8 Error Handling: Ensuring that the ATM provides clear error messages and guides users in case of issues (e.g., invalid PIN).
+
+9 Operator Switch: Testing the key-operated switch functionality for starting and stopping the ATM machine.
+
+10 Transaction Log: Verifying that the ATM logs all transactions, ensuring accurate records for troubleshooting.
+
+## Test Types
+Two key types of testing will be performed to ensure comprehensive coverage of the ATM Simulation Application:
+
+1 Exploratory Testing: Testers will perform unscripted testing to explore the ATM software’s behavior and identify potential issues in workflows, error handling, and user experience.
+
+
+2 Manual Scripted Testing: Detailed test cases will be executed to verify each functional requirement, ensuring that the ATM performs according to specifications (e.g., cash withdrawal, deposits, PIN validation).
+
+
+## Test Logistics
+### Who Will Test Each Functionality
+For the Exploratory Testing, it would be a pair testing to be conducted by two members of the team; **Remi and Gabriel**. The same set of tests will be executed. This approach ensures comprehensive coverage from multiple perspectives:
+
+The Manuel Scripted Testing will be executed by the two members of the team as well; **Ayo and Taiwo**.
+
+With this, we ensure that everyone is involved in the testing process and that all aspects of the software, including functionality, usability, and system performance, are validated from diverse viewpoints, leading to more thorough and effective testing.
+
+
+
 
 # Comparison of exploratory and manual functional testing
 

@@ -2,12 +2,12 @@
 
 **Lab. Report \#1 – Introduction to Testing and Defect Tracking**
 
-| Group: Group Number      |
+| Group: 14      |
 |-----------------|
-| Student 1 name                |   
-| Student 2 name              |   
-| Student 3 name               |   
-| Student 4 name                |   
+| Student 1 Ayodele Oluwabusola                 |   
+| Student 2 Gabriel Gabari             |   
+| Student 3 Remi Oyediji               |   
+| Student 4 Taiwo Oyewole                |   
 
 
 **Table of Contents**
@@ -33,8 +33,7 @@ learned	1](#_Toc439194682)
 
 # Introduction
 
-An introduction of your lab work, and what you knew about exploratory and manual
-functional testing before this lab
+This report shares our group's experience testing the ATM simulation system for the Lab. Before this lab, a couple of us mostly knew about software testing from theory. We thought exploratory testing was just a freeform way to check how a system behaves, while manual functional testing seemed more structured, following specific test cases. But actually doing these tests gave us a much clearer picture. We got hands-on experience with both methods, which helped us understand how they work in real-world software quality assurance.
 
 # High-level description of the exploratory testing plan
 

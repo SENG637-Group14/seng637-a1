@@ -33,9 +33,9 @@ learned	1](#_Toc439194682)
 
 # Introduction
 
-This report shares our group's experience testing the ATM simulation system for the Lab. Before this lab, a couple of us mostly knew about software testing from theory. We thought exploratory testing was just a freeform way to check how a system behaves, while manual functional testing seemed more structured, following specific test cases. But actually doing these tests gave us a much clearer picture. We got hands-on experience with both methods, which helped us understand how they work in real-world software quality assurance.
+This report shares our group's experience testing the ATM simulation system for the Lab. Before this lab, a couple of us mostly knew about software testing from theory. We thought exploratory testing was just a freeform way to check how a system behaves, while manual functional testing seemed more structured, following specific test cases. But doing these tests gave us a much clearer picture. We got hands-on experience with both methods, which helped us understand how they work in real-world software quality assurance.
 
-For our Defect Report, we started out with Azure DevOps but unfortunately, the csv export of the tracked bugs didnt have adequate presentationof all the important details, but we had to manually log the defects on an excel shit. 
+For our Defect Report, we started with Azure DevOps but unfortunately, the CSV export of the tracked bugs didn't have the adequate presentation of all the important details, so we had to manually log the defects on an Excel sheet. 
 
 # High-level description of the exploratory testing plan
 
@@ -61,14 +61,17 @@ As a team, we’ll be testing the ATM system to ensure it functions as expected.
 | 12 | Account Type Validation | Make sure the system correctly identifies and displays account types. |  
 | 13 | Operator Start/Stop | Ensure operators can securely start and stop the ATM when needed. |  
 
-Each of us will ran the same tests to ensure consistency, and documented the issues we find. When a test failed, we report the issue with clear details, including what happened, what we expected, and any patterns we notice. This way, we can tracked defects effectively and also confirmed fixes when we retest.  
+Each of us ran the same tests to ensure consistency and documented the issues we found. When a test failed, we reported the issue with clear details, including what happened, what we expected, and any patterns we noticed. This way, we tracked defects effectively and also confirmed fixes when we retested.  
 
 The aim is to be thorough but efficient. Catch as many issues as possible while keeping our testing structured and easy to follow.
 
 ## Test Types
-Two key types of testing will be performed to ensure comprehensive coverage of the ATM Simulation Application:
 
-1 Exploratory Testing: Testers will perform unscripted testing to explore the ATM software’s behavior and identify potential issues in workflows, error handling, and user experience.
+Two key types of testing were performed to ensure comprehensive coverage of the ATM Simulation Application:
+
+
+
+1 Exploratory Testing: Testers performed unscripted testing to explore the ATM software’s behavior and identify potential issues in workflows, error handling, and user experience.
 
 
 2 Manual Scripted Testing: Detailed test cases will be executed to verify each functional requirement, ensuring that the ATM performs according to specifications (e.g., cash withdrawal, deposits, PIN validation).
@@ -94,25 +97,43 @@ Text…
 
 # Notes and discussion of the peer reviews of defect reports
 
-Brief sumamary of our Defect Report
+Brief summary of our Defect Report
 
 - Total Number of Bugs found: 26
 - Bugs Resolved: 8
 - Unresolved: 18
 
-During our test, the ATM System Version_1.0 responded in a variety of weird ways which was quite fasinating. Just to mention a few, the transaction figures never adds up. For example, when making a deposit of $100, the balance after the deposit in a savings account shows up as $190 in addition to the $100 existing balance. Another scenario is making transfers from one account to the other. Lets say $90 is transferred from Checking account to Saving Account, what shows on the receipt is "$89.50". Discussing these observations as a group, we were under the impression that the difference in amount could be due to transaction charges, but since such was not mentioned in the requirement, these case were reported as bugs.
+Just to mention a few, during the peer review, the first pair in our group observed several unusual behaviors in ATM System Version 1.0. One major issue was incorrect transaction calculations.  
 
-Also, in the case of making withdrawals, we observed that when withdrawing $20 or $40 bill, the systems adds an additional $20 to the dispenses amount. i.e you get $40 for $20 and $60 for $40 withdrawals. Then in the case of $60 withdrawal, the system dispensed $100. All of these were charged on the account where the withdrawal was iniitied. But the case of withdrawing $200 took a different turn, the ATM system dispensed $20 bill whenever we tried to withdraw $200, as long as there's money in the account, and there's available cash in the system. The funny part of it all is that the bugs for the $200 withdrawals didnt affect the account balance, rather the system itself. If such system were to be released in reality, that would be a major loss to the business, as the ATM would continue spilling money.
+For example:  
+- Depositing "$100" into a savings account resulted in a balance of "$190", even though the initial balance was "$100".  
+- Transferring "$90" from the checking account to the savings account showed "$89.50" on the receipt instead of "$90".  
 
-For the Balance Inquiry test, we noticed a couple of abnormalies here and there. One of which was that the system dispenses $500 (which the system obviously dont have) when a balance inquiry on the savings account for card 1 was initiated. 
+Initially, we thought the discrepancies might be due to transaction fees. However, since no such charges were mentioned in the system requirements, we reported these cases as bugs.
+
+The second pair in our group observed significant issues with the withdrawal function in ATM System Version 1.0.  
+
+Key findings:  
+- Withdrawing $20 or $40 resulted in an extra $20 being dispensed (e.g., $40 for $20, $60 for $40).  
+- A $60 withdrawal resulted in $100 being dispensed, with the full amount deducted from the account.  
+- However, attempting to withdraw $200 caused the ATM to dispense a $20 bill repeatedly, as long as both the account and the ATM had sufficient funds.  
+- Strangely, the $200 withdrawal bug did not affect the account balance but impacted the ATM itself, essentially allowing unlimited withdrawals.  
+
+If this issue existed in a real-world system, it would cause severe financial losses, as the ATM would continue dispensing money without proper deductions. These cases were reported as critical bugs.
+
+In addition to the previously mentioned issues, we also observed anomalies during the Balance Inquiry test.  
+
+One major issue was that when performing a **balance inquiry on the savings account for card 1, the system dispensed "$500", even though it did not have that amount available.  
+
+This unexpected behavior was noted and reported as a critical bug.
 
 
 
 
 
-# How the pair testing was managed and team work/effort was divided 
+# How the pair testing was managed and teamwork/effort was divided 
 
-Text…
+All team members performed exploratory testing and recorded the defects found. In the end, we all reviewed all defects and reported them in the bug tracking tool. 
 
 # Difficulties encountered, challenges overcome, and lessons learned
 

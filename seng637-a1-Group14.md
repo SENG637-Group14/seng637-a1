@@ -139,7 +139,7 @@ For example:
 - The System shows "Unknown error before the amount selected is dispensed from the system and the n displays the balance 
 - The balance shows current balance + the amount deposited, but short of $0.10
 
-Some issues were critical while some had a low impact on the system but it is important to reduce the number of abnomalities the system has as much as we can even if not system is 100% bug free
+Some issues were critical while some had a low impact on the system but it is important to reduce the number of abnomalities the system has as much as we can even if no system is 100% bug free
 
 
 # How the pair testing was managed and teamwork/effort was divided 

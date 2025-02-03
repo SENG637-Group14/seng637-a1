@@ -130,6 +130,7 @@ This unexpected behavior was noted and reported as a critical bug.
 
 
 *For version 1.1*
+
 A number of bugs were fixed from v1.1 but new bugs were introduced. 
 - Total Number of Bugs found: 6
 

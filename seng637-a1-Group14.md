@@ -95,7 +95,7 @@ With this, we ensure that everyone is involved in the testing process and that a
 
 - I noticed that each tester in the pair discovered different issues during exploratory testing. This highlights how exploratory testing gives testers the freedom to explore the system in their own way, leading to the discovery of a wider range of bugs that might not be uncovered through scripted testing.
 - Some of the issues we discovered during the manual scripted test (MFT) had already been covered and addressed, leaving little to be done in this phase.
-- 
+
 
 # Notes and discussion of the peer reviews of defect reports
 

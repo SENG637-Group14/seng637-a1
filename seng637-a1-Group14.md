@@ -99,11 +99,12 @@ Text…
 
 Brief summary of our Defect Report
 
-- Total Number of Bugs found: 26
+*For version 1.0*
+- Total Number of Bugs found: 21
 - Bugs Resolved: 8
-- Unresolved: 18
+- Unresolved: 13
 
-Just to mention a few, during the peer review, the first pair in our group observed several unusual behaviors in ATM System Version 1.0. One major issue was incorrect transaction calculations.  
+Just to mention a few, during the peer review, the first pair in our group observed several unusual behaviors in ATM System Version 1.0/1.1. One major issue was incorrect transaction calculations.  
 
 For example:  
 - Depositing "$100" into a savings account resulted in a balance of "$190", even though the initial balance was "$100".  
@@ -128,7 +129,16 @@ One major issue was that when performing a **balance inquiry on the savings acco
 This unexpected behavior was noted and reported as a critical bug.
 
 
+*For version 1.1*
+A number of bugs were fixed from v1.1 but new bugs were introduced. 
+- Total Number of Bugs found: 6
 
+
+For example:  
+- The System shows "Unknown error before the amount selected is dispensed from the system and the n displays the balance 
+- The balance shows current balance + the amount deposited, but short of $0.10
+
+Some issues were critical while some had a low impact on the system but it is important to reduce the number of abnomalities the system has as much as we can even if not system is 100% bug free
 
 
 # How the pair testing was managed and teamwork/effort was divided 

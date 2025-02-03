@@ -41,27 +41,27 @@ This report shares our group's experience testing the ATM simulation system for 
 Based on the requirements extracted from Appendix B, we outlined the scope, approach, and all testing activities related to the ATM Simulation application. The plan identifies the features to be tested, test types to be performed, and who will be performing each test.
 ## Scope of Testing
 ### Features to be Tested
-The following features of the ATM software, as outlined in the requirements, will be tested:
+As a team, we’ll be testing the ATM system to ensure it functions as expected. Below is a breakdown of key areas we’ll focus on:  
 
-1 Card Insertion & PIN Validation: Testing the functionality for inserting the ATM card and validating the PIN for each transaction.
+| **No** | **Test Area** | **What We’re Checking** |  
+|------|----------------------|----------------|  
+| 1 | System Startup & Shutdown | Make sure the ATM powers on, requests initial cash, and shuts down properly. |  
+| 2 | Card Handling | Test if valid/invalid cards are detected and if the ATM retains a card after three failed PIN attempts. |  
+| 3 | PIN Validation | Verify correct PIN authentication, how it handles incorrect attempts, and if the system times out when inactive. |  
+| 4 | Cash Withdrawal | Ensure withdrawals work only in multiples of $20, check withdrawal limits, insufficient funds handling, and ATM cash availability. |  
+| 5 | Deposit Transactions | Confirm that deposits (cash/checks) process correctly, check timeout behavior, and verify manual envelope handling. |  
+| 6 | Fund Transfers | Test transferring money between linked accounts, including valid and invalid scenarios. |  
+| 7 | Balance Inquiry | Ensure the system correctly displays balances for all account types. |  
+| 8 | Transaction Cancellation | Make sure users can cancel at any point during a transaction. |  
+| 9 | Receipts & Logging | Verify that receipts print with correct details and that system logs record all transactions properly. |  
+| 10 | Error Handling | Check if the system provides clear error messages for invalid inputs, hardware failures, and network issues. |  
+| 11 | Grammatical Errors | Look for typos or incorrect wording in system messages. |  
+| 12 | Account Type Validation | Make sure the system correctly identifies and displays account types. |  
+| 13 | Operator Start/Stop | Ensure operators can securely start and stop the ATM when needed. |  
 
-2 Cash Withdrawal: Ensuring the withdrawal of cash in multiples of $20 from any account linked to the card, with bank approval.
+Each of us will run the same tests to ensure consistency, and we’ll document any issues we find. If a test fails, we’ll report the issue with clear details, including what happened, what we expected, and any patterns we notice. This way, we can track defects effectively and confirm fixes when we retest.  
 
-3 Deposit Handling: Testing the deposit functionality for cash and checks in envelopes, and communication with the bank for approval.
-
-4 Money Transfers: Verifying the transfer of funds between accounts linked to the card.
-
-5 Balance Inquiry: Testing the balance inquiry functionality for various accounts linked to the ATM card.
-
-6 Cancel Transaction: Ensuring the cancel button works to abort transactions at any stage.
-
-7 Receipt Generation: Verifying that receipts are generated for each transaction, with correct details including time, type, and balances.
-
-8 Error Handling: Ensuring that the ATM provides clear error messages and guides users in case of issues (e.g., invalid PIN).
-
-9 Operator Switch: Testing the key-operated switch functionality for starting and stopping the ATM machine.
-
-10 Transaction Log: Verifying that the ATM logs all transactions, ensuring accurate records for troubleshooting.
+The aim is to be thorough but efficient. Catch as many issues as possible while keeping our testing structured and easy to follow.
 
 ## Test Types
 Two key types of testing will be performed to ensure comprehensive coverage of the ATM Simulation Application:

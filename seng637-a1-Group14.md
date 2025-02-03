@@ -148,8 +148,17 @@ All team members performed exploratory testing and recorded the defects found. I
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
-Text…
+*Difficulties encountered*
+
+- We had chanllenges exporting our tracked bug to excel on Azure DeveOps initially but after taking to understand the system, we were able to solve this issue
+- 
+*Lessons learned*
+
+- We learnt as a team that issues or bug reported needs to be revalidate to ensure consistency because it is possible that a party does not have the same exoerience as the other or one aprty missed out a key detail that can impact the overall user experience
+- This assignment further established to us that no system is 100% bug free because we continually discovered more bugs as we explore the system further
+
+
 
 # Comments/feedback on the lab and lab document itself
 
-Text…
+- The directiona nd steps to take in this assignment was quite detail used and self explanatory after reading them

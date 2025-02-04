@@ -4,10 +4,10 @@
 
 | Group: 14      |
 |-----------------|
-| Student 1 Ayodele Oluwabusola                 |   
-| Student 2 Gabriel Gabari             |   
-| Student 3 Remi Oyediji               |   
-| Student 4 Taiwo Oyewole                |   
+| Student 1: Ayodele Oluwabusola                 |   
+| Student 2: Gabriel Gabari             |   
+| Student 3: Remi Oyediji               |   
+| Student 4: Taiwo Oyewole                |   
 
 
 **Table of Contents**
@@ -76,7 +76,7 @@ As a team, we tested the ATM system to ensure it functions as expected. In our t
 
 ## Test Logistics
 ### Who Will Test Each Functionality
-The Exploratory Testing was conducted by two members of the team. The same set of tests was executed and peer-reviewed. This approach ensured comprehensive coverage from multiple perspectives. Below is a table of how each test area was distributed in pairs. Each pair conducted an extensive testing of each test area.
+The Exploratory Testing was conducted by two members of the team, and so was the Manual scripted testing. The same set of tests was executed and peer-reviewed. This approach ensured comprehensive coverage from multiple perspectives. Below is a table of how each test area was distributed in pairs. Each pair conducted an extensive testing of each test area.
 
 **Squad 1:**
 | **Test Area**        | **Reviewed By**   |
@@ -102,11 +102,8 @@ The Exploratory Testing was conducted by two members of the team. The same set o
 
 With this, we ensure that everyone is involved in the testing process and that all aspects of the software, including functionality, usability, and system performance, are validated from diverse viewpoints, leading to more thorough and effective testing.
 
-Each member also ran the same tests individually to ensure consistency and documented the issues we found. This way, we tracked defects effectively and also confirmed fixes when we retested.  
+## When will the test occur?
 
-The aim is to be thorough but efficient. Catch as many issues as possible while keeping our testing structured and easy to follow.
-
-**When will the test occur?** 
 The team started testing once the following were in place; 
 - Software is available for testing.
 - Test Areas have been identified and created.
@@ -168,23 +165,42 @@ For example:
 Some issues were critical while some had a low impact on the system but it is important to reduce the number of abnormalities the system has as much as we can even if no system is 100% bug-free
 
 Below are links to illustrations/screenshots of some bugs;
-- Typographical error 
+
+-Typographical Error
+
+![Typographical error](media/Grammatical%20Error.png)
+
+- $500 Bill Spill
+
+![Typographical error](media/500_bill_Spill.png)
+
+- No Currency sign
+
+![Typographical error](media/No%20Currency.png)
+
+More clips of bugs detected can be found in the Media file.
 
 
 # How the pair testing was managed and teamwork/effort was divided 
 
-All team members performed exploratory testing and recorded the defects found. In the end, we all reviewed all defects and reported them in the bug tracking tool. 
+The team members performed exploratory testing in pairs and recorded the defects found. In the end, we all reviewed all defects and reported them in the bug tracking tool. 
+
+Each member also ran the same tests individually to ensure consistency and documented the issues we found. This way, we tracked defects effectively and also confirmed fixes when we retested.
+
+For the Regression Test, we did it as a group, we took turns testing and tracking the process.
+
+The aim is to be thorough but efficient. Catch as many issues as possible while keeping our testing structured and easy to follow.
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
 *Difficulties encountered*
 
-- We had challenges exporting our tracked bug to excel on Azure DeveOps initially but after taking to understand the system, we were able to solve this issue
+- We had challenges exporting our tracked bug to excel on Azure DevOps initially but after taking to understand the system, we were able to solve this issue
 - 
 *Lessons learned*
 
-- We learnt as a team that issues or bug reported needs to be revalidate to ensure consistency because it is possible that a party does not have the same exoerience as the other or one aprty missed out a key detail that can impact the overall user experience
-- This assignment further established to us that no system is 100% bug free because we continually discovered more bugs as we explored the system further
+- We learned as a team that issues or bugs reported need to be revalidated to ensure consistency because it is possible that a party does not have the same experience as the other or one party missed out on a key detail that can impact the overall user experience
+- This assignment further established to us that no system is 100% bug-free because we continually discovered more bugs as we explored the system further
 
 
 

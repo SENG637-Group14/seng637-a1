@@ -111,6 +111,7 @@ The team started testing once the following were in place;
 - Software is available for testing.
 - Test Areas have been identified and created.
 - Test Environments (PC)
+  
 **Test Environment is built:** Windows and MacBook
 
 
@@ -125,9 +126,9 @@ The team started testing once the following were in place;
 
 Summary of our Defect Report
 
-*For version 1.0*
-- Total Number of Bugs found: 21
-- Bugs Resolved: 8
+*For ATM Simulation system version 1.0*
+- Total Number of Bugs found: 20
+- Bugs Resolved: 7
 - Unresolved: 13
 
 To mention a few, during the peer review, the first pair in our group observed several unusual behaviors in ATM System Version 1.0/1.1. One major issue was incorrect transaction calculations.  
@@ -169,13 +170,15 @@ Some issues were critical while some had a low impact on the system but it is im
 
 Below are illustrations/screenshots of some bugs;
 
--Typographical Error
+- Typographical Error
 
 ![Typographical error](media/Grammatical%20Error.png)
+
 
 - $500 Bill Spill
 
 ![Typographical error](media/500_bill_Spill.png)
+
 
 - No Currency sign
 
@@ -210,5 +213,5 @@ The aim is to be thorough but efficient. Catch as many issues as possible while 
 # Comments/feedback on the lab and lab document itself
 
 - The directions and steps for this assignment were detailed and self-explanatory, making them easy to follow after reading.
-- This lab provided valuable insight into properly identifying and documenting defects.
+- The lab exercise provided valuable insight into properly identifying and documenting defects.
 - Testing the ATM system in different ways showed how bugs can appear in unexpected places

@@ -40,7 +40,7 @@ This report shares our group's experience testing the ATM simulation system for 
 
 For our Defect Report, we initially used Azure DevOps to track bugs. However, the CSV export did not adequately present all key details. To ensure clarity and completeness, we manually logged the defects in an Excel sheet.  
 
-You can find the [Defect Report](https://github.com/SENG637-Group14/seng637-a1/blob/main/Defect_Report_Group_14.xlsx) directly in the repository's root directory: 
+You can find and download the Defect Report (/Defect_Report_Group_14.xlsx) [here](https://github.com/SENG637-Group14/seng637-a1/blob/main/Defect_Report_Group_14.xlsx) 
 
 
 # High-level description of the exploratory testing plan

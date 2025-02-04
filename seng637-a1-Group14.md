@@ -69,7 +69,7 @@ As a team, we tested the ATM system to ensure it functions as expected. In our t
 | **Test Area** | **What We’re Checking** | 
 |----------------------|----------------|
 | System Startup & Shutdown | The operator can power on the system, and properly shut it down when needed.
-| Receipts | A customer can receive a printed receipt with accurate transaction details.
+| Receipts | A customer can view and print receipts with accurate transaction details.
 | Error Handling | The system provides appropriate error messages for invalid inputs.
 | Account Type Validation | The system correctly identifies and displays the type of account for the customer. 
 | Transaction Logging | The system logs all transactions correctly.
@@ -80,7 +80,7 @@ As a team, we tested the ATM system to ensure it functions as expected. In our t
 
 ## Test Logistics
 ### Who Will Test Each Functionality
-The Exploratory Testing was conducted by two members of the team, and so was the Manual scripted testing. The same set of tests was executed and peer-reviewed. This approach ensured comprehensive coverage from multiple perspectives. Below is a table of how each test area was distributed in pairs. Each pair conducted an extensive testing of each test area.
+The Exploratory Testing was conducted by two members of the team, and so was the Manual scripted testing. The same set of tests were executed and peer-reviewed. This approach ensured comprehensive coverage from multiple perspectives. Below is a table of how each test area was distributed in pairs. Each pair conducted an extensive testing of each test area.
 
 **Squad 1:**
 | **Test Area**        | **Reviewed By**   |
@@ -111,9 +111,9 @@ With this, we ensure that everyone is involved in the testing process and that a
 The team started testing once the following were in place; 
 - Software is available for testing.
 - Test Areas have been identified and created.
-- Test Environments (PC)
+- Test Environments is available(PC)
   
-**Test Environment is built:** Windows and MacBook
+**Test Environment:** Windows and MacBook
 
 
 
@@ -202,7 +202,7 @@ The aim is to be thorough but efficient. Catch as many issues as possible while 
 
 *Difficulties encountered*
 
-- We had challenges exporting our tracked bug to excel on Azure DevOps initially but after taking to understand the system, we were able to solve this issue
+- We had challenges exporting our tracked bug to Excel on Azure DevOps initially but after taking to understand the system, we were able to solve this issue
 - 
 *Lessons learned*
 

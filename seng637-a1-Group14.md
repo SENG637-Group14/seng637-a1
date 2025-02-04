@@ -10,7 +10,9 @@
 | Student 4: Taiwo Oyewole                |   
 
 
-**Table of Contents**- [Introduction](#introduction)
+
+**Table of Contents**
+
 - [Introduction](#introduction)
 - [High-level description of the exploratory testing plan](#high-level-description-of-the-exploratory-testing-plan)
 - [Test Strategy](#test-strategy)
@@ -165,7 +167,7 @@ For example:
 
 Some issues were critical while some had a low impact on the system but it is important to reduce the number of abnormalities the system has as much as we can even if no system is 100% bug-free
 
-Below are links to illustrations/screenshots of some bugs;
+Below are illustrations/screenshots of some bugs;
 
 -Typographical Error
 
@@ -179,7 +181,7 @@ Below are links to illustrations/screenshots of some bugs;
 
 ![Typographical error](media/No%20Currency.png)
 
-More clips of bugs detected can be found in the Media file.
+More clips of bugs detected can be found in the [Media file](/media).
 
 
 # How the pair testing was managed and teamwork/effort was divided 

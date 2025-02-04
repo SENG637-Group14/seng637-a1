@@ -49,7 +49,7 @@ You can find and download the Defect Report (/Defect_Report_Group_14.xlsx) [here
 Based on the requirements extracted from Appendix B, we outlined the scope, approach, and all testing activities related to the ATM Simulation system. The plan identifies the features to be tested, test types to be performed, and who will be performing each test.
 ## Scope of Testing
 ### Features to be Tested
-As a team, we tested the ATM system to ensure it functions as expected. In our testing approach, we considered both user interaction with the ATM and the system's internal behavior. The user-focused tests evaluate how the ATM responds to inputs, while system-level tests check backend processing, data accuracy, and error handling. Below is a breakdown of key areas we’ll focus on:   
+As a team, we tested the ATM system to ensure it functions as expected. In our testing approach, we considered both user interaction with the ATM and the system's internal behavior. The user-focused tests evaluate how the ATM responds to inputs, while system-level tests check backend processing, data accuracy, and error handling. Below is a breakdown of the key areas we focused on:   
 
 ### Test Areas Divided by Focus  
 ### User Interaction Tests

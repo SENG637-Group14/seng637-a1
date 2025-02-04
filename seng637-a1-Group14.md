@@ -33,80 +33,104 @@ learned	1](#_Toc439194682)
 
 # Introduction
 
-This report shares our group's experience testing the ATM simulation system for the Lab. Before this lab, a couple of us mostly knew about software testing from theory. We thought exploratory testing was just a freeform way to check how a system behaves, while manual functional testing seemed more structured, following specific test cases. But doing these tests gave us a much clearer picture. We got hands-on experience with both methods, which helped us understand how they work in real-world software quality assurance.
+This report shares our group's experience testing the ATM simulation system for the Lab. Before this lab, a couple of us mostly knew about software testing from theory. We thought exploratory testing was just a freeform way to check how a system behaves, while manual functional testing seemed more structured, following specific test cases. But doing these tests gave a much clearer picture. We got hands-on experience with both methods, which helped us understand how they work in real-world software quality assurance.
 
-For our Defect Report, we started with Azure DevOps but unfortunately, the CSV export of the tracked bugs didn't have the adequate presentation of all the important details, so we had to manually log the defects on an Excel sheet. 
+For our Defect Report, we initially used Azure DevOps to track bugs. However, the CSV export did not adequately present all key details. To ensure clarity and completeness, we manually logged the defects in an Excel sheet.  
+
+You can find the *Defect Report* directly in the repository's root directory: 
+
 
 # High-level description of the exploratory testing plan
 
 # Test Strategy
-Based on the requirements extracted from Appendix B, we outlined the scope, approach, and all testing activities related to the ATM Simulation application. The plan identifies the features to be tested, test types to be performed, and who will be performing each test.
+Based on the requirements extracted from Appendix B, we outlined the scope, approach, and all testing activities related to the ATM Simulation system. The plan identifies the features to be tested, test types to be performed, and who will be performing each test.
 ## Scope of Testing
 ### Features to be Tested
-As a team, we’ll be testing the ATM system to ensure it functions as expected. Below is a breakdown of key areas we’ll focus on:  
+As a team, we tested the ATM system to ensure it functions as expected. In our testing approach, we considered both user interaction with the ATM and the system's internal behavior. The user-focused tests evaluate how the ATM responds to inputs, while system-level tests check backend processing, data accuracy, and error handling. Below is a breakdown of key areas we’ll focus on:   
 
-| **No** | **Test Area** | **What We’re Checking** |  
-|------|----------------------|----------------|  
-| 1 | System Startup & Shutdown | Make sure the ATM powers on, requests initial cash, and shuts down properly. |  
-| 2 | Card Handling | Test if valid/invalid cards are detected and if the ATM retains a card after three failed PIN attempts. |  
-| 3 | PIN Validation | Verify correct PIN authentication, how it handles incorrect attempts, and if the system times out when inactive. |  
-| 4 | Cash Withdrawal | Ensure withdrawals work only in multiples of $20, check withdrawal limits, insufficient funds handling, and ATM cash availability. |  
-| 5 | Deposit Transactions | Confirm that deposits (cash/checks) process correctly, check timeout behavior, and verify manual envelope handling. |  
-| 6 | Fund Transfers | Test transferring money between linked accounts, including valid and invalid scenarios. |  
-| 7 | Balance Inquiry | Ensure the system correctly displays balances for all account types. |  
-| 8 | Transaction Cancellation | Make sure users can cancel at any point during a transaction. |  
-| 9 | Receipts & Logging | Verify that receipts print with correct details and that system logs record all transactions properly. |  
-| 10 | Error Handling | Check if the system provides clear error messages for invalid inputs, hardware failures, and network issues. |  
-| 11 | Grammatical Errors | Look for typos or incorrect wording in system messages. |  
-| 12 | Account Type Validation | Make sure the system correctly identifies and displays account types. |  
-| 13 | Operator Start/Stop | Ensure operators can securely start and stop the ATM when needed. |  
+### **Test Areas Divided by Focus**  
+### **User Interaction Tests**  
+| **Test Area** | **What We’re Checking** |
+|----------------------|----------------| 
+| Card Handling | A customer inserts an ATM card, and the system detects valid/invalid cards. The ATM retains the card after three failed PIN attempts.
+| PIN Validation | A customer enters their PIN, and the ATM validates it. If invalid, the system prompts for re-entry, and the card is retained after three failed attempts.
+| Cash Withdrawal | A customer can withdraw cash from their linked account in multiples of $20, with bank approval required before dispensing the cash.
+| Deposit Transactions | A customer can deposit cash and/or checks into any linked account by entering the deposit amount into the ATM, with manual envelope verification.
+| Fund Transfers | A customer can transfer funds between any two accounts linked to their card, with proper validation of both accounts. 
+| Balance Inquiry | A customer can check the balance of any account linked to their card.
+| Transaction Cancellation | A customer can cancel any ongoing transaction by pressing the Cancel key at any point during the process. 
+| Grammatical Errors | The ATM displays system messages free from grammatical errors and typos.
 
-Each of us ran the same tests to ensure consistency and documented the issues we found. When a test failed, we reported the issue with clear details, including what happened, what we expected, and any patterns we noticed. This way, we tracked defects effectively and also confirmed fixes when we retested.  
-
-The aim is to be thorough but efficient. Catch as many issues as possible while keeping our testing structured and easy to follow.
+### **System-Level Tests**  
+| **Test Area** | **What We’re Checking** | 
+|----------------------|----------------|
+| System Startup & Shutdown | The operator can power on the system, and properly shut it down when needed.
+| Receipts | A customer can receive a printed receipt with accurate transaction details.
+| Error Handling | The system provides appropriate error messages for invalid inputs.
+| Account Type Validation | The system correctly identifies and displays the type of account for the customer. 
+| Transaction Logging | The system logs all transactions correctly.
 
 ## Test Types
 
-Two key types of testing were performed to ensure comprehensive coverage of the ATM Simulation Application:
-
-
-
-1 Exploratory Testing: Testers performed unscripted testing to explore the ATM software’s behavior and identify potential issues in workflows, error handling, and user experience.
-
-
-2 Manual Scripted Testing: Detailed test cases will be executed to verify each functional requirement, ensuring that the ATM performs according to specifications (e.g., cash withdrawal, deposits, PIN validation).
-
+**System Testing:** We conducted a complete, integrated system test to evaluate the system's compliance with the specified requirements.
 
 ## Test Logistics
 ### Who Will Test Each Functionality
-For the Exploratory Testing, it would be a pair testing to be conducted by two members of the team; **Remi and Gabriel**. The same set of tests will be executed. This approach ensures comprehensive coverage from multiple perspectives:
+The Exploratory Testing was conducted by two members of the team. The same set of tests was executed and peer-reviewed. This approach ensured comprehensive coverage from multiple perspectives. Below is a table of how each test area was distributed in pairs. Each pair conducted an extensive testing of each test area.
 
-The Manuel Scripted Testing will be executed by the two members of the team as well; **Ayo and Taiwo**.
+**Squad 1:**
+| **Test Area**        | **Reviewed By**   |
+|--------------------------|-------------------|
+| Receipts            | Remi and Gabriel       |
+| Cash Withdrawal     | Remi and Gabriel         |
+| Deposit Transaction  | Remi and Gabriel         |
+| Transaction Cancellation | Remi and Gabriel     |
+| Grammatical Errors   | Remi and Gabriel         |
+| Transaction Logging  | Remi and Gabriel         |
+
+**Squad 2:**
+
+| **Area Reviewed**        | **Reviewed By**   |
+|--------------------------|-------------------|
+| Card Handling     | Ayo and Taiwo       |
+| PIN Validation       | Ayo and Taiwo         |
+| Fund Transfer        | Ayo and Taiwo         |
+| Balance Inquiry      | Ayo and Taiwo         |
+| System Startup       | Ayo and Taiwo         |
+| Error Handling       | Ayo and Taiwo       |
+
 
 With this, we ensure that everyone is involved in the testing process and that all aspects of the software, including functionality, usability, and system performance, are validated from diverse viewpoints, leading to more thorough and effective testing.
+
+Each member also ran the same tests individually to ensure consistency and documented the issues we found. This way, we tracked defects effectively and also confirmed fixes when we retested.  
+
+The aim is to be thorough but efficient. Catch as many issues as possible while keeping our testing structured and easy to follow.
+
+**When will the test occur?** 
+The team started testing once the following were in place; 
+- Software is available for testing.
+- Test Areas have been identified and created.
+- Test Environments (PC)
+**Test Environment is built:** Windows and MacBook
 
 
 
 
 # Comparison of exploratory and manual functional testing
-
--   Note that you need to submit a report generated by your defect tracking
-    system, containing all defects recorded in the system.
-
-- I noticed that each tester in the pair discovered different issues during exploratory testing. This highlights how exploratory testing gives testers the freedom to explore the system in their own way, leading to the discovery of a wider range of bugs that might not be uncovered through scripted testing.
+- We noticed that each tester in the pair discovered different issues during exploratory testing. This highlights how exploratory testing gives testers the freedom to explore the system in their way, leading to the discovery of a wider range of bugs that might not be uncovered through scripted testing.
 - Some of the issues we discovered during the manual scripted test (MFT) had already been covered and addressed, leaving little to be done in this phase.
 
 
 # Notes and discussion of the peer reviews of defect reports
 
-Brief summary of our Defect Report
+Summary of our Defect Report
 
 *For version 1.0*
 - Total Number of Bugs found: 21
 - Bugs Resolved: 8
 - Unresolved: 13
 
-Just to mention a few, during the peer review, the first pair in our group observed several unusual behaviors in ATM System Version 1.0/1.1. One major issue was incorrect transaction calculations.  
+To mention a few, during the peer review, the first pair in our group observed several unusual behaviors in ATM System Version 1.0/1.1. One major issue was incorrect transaction calculations.  
 
 For example:  
 - Depositing "$100" into a savings account resulted in a balance of "$190", even though the initial balance was "$100".  
@@ -133,15 +157,18 @@ This unexpected behavior was noted and reported as a critical bug.
 
 *For version 1.1*
 
-A number of bugs were fixed from v1.1 but new bugs were introduced. 
+Some bugs were fixed from v1.1 but new bugs were introduced. 
 - Total Number of Bugs found: 6
 
 
 For example:  
 - The System shows "Unknown error before the amount selected is dispensed from the system and the n displays the balance 
-- The balance shows current balance + the amount deposited, but short of $0.10
+- The balance shows the current balance + the amount deposited, but short of $0.10
 
-Some issues were critical while some had a low impact on the system but it is important to reduce the number of abnomalities the system has as much as we can even if no system is 100% bug free
+Some issues were critical while some had a low impact on the system but it is important to reduce the number of abnormalities the system has as much as we can even if no system is 100% bug-free
+
+Below are links to illustrations/screenshots of some bugs;
+- Typographical error 
 
 
 # How the pair testing was managed and teamwork/effort was divided 
@@ -152,15 +179,17 @@ All team members performed exploratory testing and recorded the defects found. I
 
 *Difficulties encountered*
 
-- We had chanllenges exporting our tracked bug to excel on Azure DeveOps initially but after taking to understand the system, we were able to solve this issue
+- We had challenges exporting our tracked bug to excel on Azure DeveOps initially but after taking to understand the system, we were able to solve this issue
 - 
 *Lessons learned*
 
 - We learnt as a team that issues or bug reported needs to be revalidate to ensure consistency because it is possible that a party does not have the same exoerience as the other or one aprty missed out a key detail that can impact the overall user experience
-- This assignment further established to us that no system is 100% bug free because we continually discovered more bugs as we explore the system further
+- This assignment further established to us that no system is 100% bug free because we continually discovered more bugs as we explored the system further
 
 
 
 # Comments/feedback on the lab and lab document itself
 
 - The directions and steps for this assignment were detailed and self-explanatory, making them easy to follow after reading.
+- This lab provided valuable insight into properly identifying and documenting defects.
+- Testing the ATM system in different ways showed how bugs can appear in unexpected places

@@ -108,10 +108,10 @@ With this, we ensure that everyone is involved in the testing process and that a
 
 ## When will the test occur?
 
-The team started testing once the following were in place; 
-- Software Under Test (SUT) is available for testing.
-- Test Areas have been identified and created.
-- Test Environments is available(PC)
+The team started testing when the following were in place; 
+- Software Under Test (SUT) was available for testing.
+- Test Areas identified and created.
+- Test Environments were accessible (PC).
   
 **Test Environment:** Windows and MacBook
 

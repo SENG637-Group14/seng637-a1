@@ -122,7 +122,7 @@ The team started testing when the following were in place;
 
 **Exploratory Testing:**
 - **Benefits:**
-  - **Flexible and Quick:** Broader test coverage, uncovering various defects across functionalities. We could test things without a strict plan, allowing us to find issues quickly. And devising various d ways to test the system and discover hidden problems
+  - **Flexible and Quick:** Broader test coverage, uncovering various defects across functionalities. We could test things without a strict plan, allowing us to find issues quickly and devising various ways to test the system and discover hidden problems
   - **Adaptability:** Adaptable approach helped identify critical issues, such as incorrect cash dispensing and balance discrepancies.
   
 - **Tradeoffs:**
@@ -133,7 +133,7 @@ The team started testing when the following were in place;
 - **Benefits:**
   - **Organized and Clear:** It was easier to track what’s been tested since we followed a script, making sure nothing is missed.
   - **Covers All Basics:** The scripted tests helped us confirm that the system worked as expected.
-    It's safe to say that Manual Scripted testing is Consistent, reproducible, and ideal for regression testing.
+    It's safe to say that Manual Scripted testing is consistent, reproducible, and ideal for regression testing.
 
 - **Challenges:**
   - **Redundant:** Since exploratory testing already found many issues, manual testing sometimes felt repetitive.

@@ -18,9 +18,9 @@
 - [Test Strategy](#test-strategy)
   - [Scope of Testing](#scope-of-testing)
     - [Features to be Tested](#features-to-be-tested)
-    - [**Test Areas Divided by Focus**](#test-areas-divided-by-focus)
-    - [**User Interaction Tests**](#user-interaction-tests)
-    - [**System-Level Tests**](#system-level-tests)
+    - [Test Areas Divided by Focus](#test-areas-divided-by-focus)
+    - [User Interaction Tests](#user-interaction-tests)
+    - [System-Level Tests](#system-level-tests)
   - [Test Types](#test-types)
   - [Test Logistics](#test-logistics)
     - [Who Will Test Each Functionality](#who-will-test-each-functionality)
@@ -51,8 +51,9 @@ Based on the requirements extracted from Appendix B, we outlined the scope, appr
 ### Features to be Tested
 As a team, we tested the ATM system to ensure it functions as expected. In our testing approach, we considered both user interaction with the ATM and the system's internal behavior. The user-focused tests evaluate how the ATM responds to inputs, while system-level tests check backend processing, data accuracy, and error handling. Below is a breakdown of key areas we’ll focus on:   
 
-### **Test Areas Divided by Focus**  
-### **User Interaction Tests**  
+### Test Areas Divided by Focus  
+### User Interaction Tests
+
 | **Test Area** | **What We’re Checking** |
 |----------------------|----------------| 
 | Card Handling | A customer inserts an ATM card, and the system detects valid/invalid cards. The ATM retains the card after three failed PIN attempts.
@@ -64,7 +65,7 @@ As a team, we tested the ATM system to ensure it functions as expected. In our t
 | Transaction Cancellation | A customer can cancel any ongoing transaction by pressing the Cancel key at any point during the process. 
 | Grammatical Errors | The ATM displays system messages free from grammatical errors and typos.
 
-### **System-Level Tests**  
+### System-Level Tests 
 | **Test Area** | **What We’re Checking** | 
 |----------------------|----------------|
 | System Startup & Shutdown | The operator can power on the system, and properly shut it down when needed.

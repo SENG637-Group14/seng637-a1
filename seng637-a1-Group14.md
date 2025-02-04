@@ -76,11 +76,11 @@ As a team, we tested the ATM system to ensure it functions as expected. In our t
 
 ## Test Types
 
-**System Testing:** We conducted a complete, integrated system test to evaluate the system's compliance with the specified requirements.
+**System Testing:** We conducted a complete system test to evaluate the system's compliance with the specified requirements.
 
 ## Test Logistics
 ### Who Will Test Each Functionality
-The Exploratory Testing was conducted by two members of the team, and so was the Manual scripted testing. The same set of tests were executed and peer-reviewed. This approach ensured comprehensive coverage from multiple perspectives. Below is a table of how each test area was distributed in pairs. Each pair conducted an extensive testing of each test area.
+The Exploratory Testing was conducted in pairs, and so was the Manual scripted testing. The same set of tests were executed and peer-reviewed. This approach ensured comprehensive coverage from multiple perspectives. Below is a table of how each test area was distributed in pairs. Each pair conducted an extensive testing of each test area.
 
 **Squad 1:**
 | **Test Area**        | **Reviewed By**   |

@@ -40,7 +40,7 @@ This report shares our group's experience testing the ATM simulation system for 
 
 For our Defect Report, we initially used Azure DevOps to track bugs. However, the CSV export did not adequately present all key details. To ensure clarity and completeness, we manually logged the defects in an Excel sheet.  
 
-You can find the *Defect Report* directly in the repository's root directory: 
+You can find the [Defect Report](https://github.com/SENG637-Group14/seng637-a1/blob/main/Defect_Report_Group_14.xlsx) directly in the repository's root directory: 
 
 
 # High-level description of the exploratory testing plan
@@ -119,8 +119,31 @@ The team started testing once the following were in place;
 
 
 # Comparison of exploratory and manual functional testing
-- We noticed that each tester in the pair discovered different issues during exploratory testing. This highlights how exploratory testing gives testers the freedom to explore the system in their way, leading to the discovery of a wider range of bugs that might not be uncovered through scripted testing.
-- Some of the issues we discovered during the manual scripted test (MFT) had already been covered and addressed, leaving little to be done in this phase.
+
+**Exploratory Testing:**
+- **Benefits:**
+  - **Flexible and Quick:** Broader test coverage, uncovering various defects across functionalities. We could test things without a strict plan, allowing us to find issues quickly. And devising various d ways to test the system and discover hidden problems
+  - **Adaptability:** Adaptable approach helped identify critical issues, such as incorrect cash dispensing and balance discrepancies.
+  
+- **Tradeoffs:**
+  - **Not Repeatable:** It's harder to repeat the exact same tests because we didn’t follow a set script.
+    Could Miss Some Tests. Some areas might not have been covered. Less structured, may miss specific scenarios, harder to manage.
+
+**Manual Scripted Testing:**
+- **Benefits:**
+  - **Organized and Clear:** It was easier to track what’s been tested since we followed a script, making sure nothing is missed.
+  - **Covers All Basics:** The scripted tests helped us confirm that the system worked as expected.
+    It's safe to say that Manual Scripted testing is Consistent, reproducible, and ideal for regression testing.
+
+- **Challenges:**
+  - **Redundant:** Since exploratory testing already found many issues, manual testing sometimes felt repetitive.
+  - **Takes More Time:** Doing manual tests took longer, especially when we had already found many issues in the exploratory phase.
+
+**Effectiveness:**
+- **Exploratory First:** It helped us find problems quickly and gave us a good starting point for the next phase.
+- **Manual After Exploratory:** The scripted tests made sure we covered everything, but some tests felt unnecessary since exploratory testing had already uncovered many problems.
+
+In summary, exploratory testing was quicker and helped us find issues early, while manual testing made sure we followed the required steps. Both methods worked together, but there was some overlap in testing, making manual testing feel less efficient at times.
 
 
 # Notes and discussion of the peer reviews of defect reports
@@ -187,7 +210,10 @@ Below are illustrations/screenshots of some bugs;
 
 More clips of bugs detected can be found in the [Media file](/media).
 
-
+- We noticed that each tester in the pair discovered different issues during exploratory testing. This highlights how exploratory testing gives testers the freedom to explore the system in their way, leading to the discovery of a wider range of bugs that might not be uncovered through scripted testing only.
+  
+- Some of the issues we discovered during the manual scripted test (MFT) had already been covered and addressed, leaving little to be done in the manual testing phase.
+  
 # How the pair testing was managed and teamwork/effort was divided 
 
 The team members performed exploratory testing in pairs and recorded the defects found. In the end, we all reviewed all defects and reported them in the bug tracking tool. 

@@ -10,26 +10,27 @@
 | Student 4: Taiwo Oyewole                |   
 
 
-**Table of Contents**
+**Table of Contents**- [Introduction](#introduction)
+- [Introduction](#introduction)
+- [High-level description of the exploratory testing plan](#high-level-description-of-the-exploratory-testing-plan)
+- [Test Strategy](#test-strategy)
+  - [Scope of Testing](#scope-of-testing)
+    - [Features to be Tested](#features-to-be-tested)
+    - [**Test Areas Divided by Focus**](#test-areas-divided-by-focus)
+    - [**User Interaction Tests**](#user-interaction-tests)
+    - [**System-Level Tests**](#system-level-tests)
+  - [Test Types](#test-types)
+  - [Test Logistics](#test-logistics)
+    - [Who Will Test Each Functionality](#who-will-test-each-functionality)
+  - [When will the test occur?](#when-will-the-test-occur)
+- [Comparison of exploratory and manual functional testing](#comparison-of-exploratory-and-manual-functional-testing)
+- [Notes and discussion of the peer reviews of defect reports](#notes-and-discussion-of-the-peer-reviews-of-defect-reports)
+- [How the pair testing was managed and teamwork/effort was divided](#how-the-pair-testing-was-managed-and-teamworkeffort-was-divided)
+- [Difficulties encountered, challenges overcome, and lessons learned](#difficulties-encountered-challenges-overcome-and-lessons-learned)
+- [Comments/feedback on the lab and lab document itself](#commentsfeedback-on-the-lab-and-lab-document-itself)
 
-(When you finish writing, update the following list using right click, then
-“Update Field”)
 
-[1 Introduction 1](#_Toc439194677)
 
-[2 High-level description of the exploratory testing plan	1](#_Toc439194678)
-
-[3 Comparison of exploratory and manual functional testing	1](#_Toc439194679)
-
-[4 Notes and discussion of the peer reviews of defect reports	1](#_Toc439194680)
-
-[5 How the pair testing was managed and team work/effort was
-divided	1](#_Toc439194681)
-
-[6 Difficulties encountered, challenges overcome, and lessons
-learned	1](#_Toc439194682)
-
-[7 Comments/feedback on the lab and lab document itself	1](#_Toc439194683)
 
 # Introduction
 
